@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Reggae+One&display=swap"
+        rel="stylesheet">
+    <link href="./fontawesome/css/all.css" rel="stylesheet">
+    <!--load all styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pedro Fiúza</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="progbarContainer">
+        <div class="progBar">
+            <div id="currentPos" class="currentPos"></div>
+        </div>
+    </div>
+
+    <section id="about">
+        <img src="./img/pedro.jpg" alt="my image" class="imgAbout">
+        <div>
+            <h2>About Me</h2>
+            <p class="pAbout">
+                Hi! My name is <em>Pedro Fiúza</em>, an aspiring and enthusiastic <strong>Front End Web
+                    Developer</strong>!
+                <br>
+                Since a young age I've always been envolved with <strong>Information and Technology</strong>,
+                especially working under <strong>MS-DOS</strong> and the good old <strong>Windows 3.1</strong>. <br>
+                Recently I discovered my passion for Front End Development and been learning more
+                about it, even doing some live courses and online courses like <strong>Code Academy</strong>.
+                <br>
+                I really enjoy learning all the possibilities and freedom on web designing and developing,
+                so making a living out of it would be the icing on the cake!
+                <br>
+                Hope you enjoy my Portfolio page!
+            </p>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="workContainer" id="workContainer">
+            <div class="work tubo">
+                <img src="./img/tubobar.jpg" alt="work image" class="imgWork">
+                <p id="work1">Tubo Bar</p>
+            </div>
+            <div class="work bookstore">
+                <img src="./img/bookstore.jpg" alt="work image" class="imgWork">
+                <p id="work2">BookStore</p>
+            </div>
+            <div class="work beiramar">
+                <img src="./img/beiramar.jpg" alt="work image" class="imgWork">
+                <p id="work3">Beira Mar</p>
+            </div>
+            <div class="work gardening">
+                <img src="./img/gardening.jpg" alt="work image" class="imgWork">
+                <p id="work4">Gardening</p>
+            </div>
+            <div class="work woodenfork">
+                <img src="./img/woodenfork.jpg" alt="work image" class="imgWork">
+                <p id="work5">WoodenFork</p>
+            </div>
+            <div class="work natraj">
+                <img src="./img/natraj.jpg" alt="work image" class="imgWork">
+                <p id="work6">Natraj</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skillsContainer" id="skillsContainer">
+            <i id="iHtml" class="fab fa-html5" aria-hidden="true"></i>
+            <i id="iCss" class="fab fa-css3" aria-hidden="true"></i>
+            <i id="iJs" class="fab fa-js-square" aria-hidden="true"></i>
+            <i id="iTerminal" class="fas fa-terminal" aria-hidden="true"></i>
+            <i id="iGit" class="fab fa-git" aria-hidden="true"></i>
+            <i id="iGithub" class="fab fa-github" aria-hidden="true"></i>
+            <i id="iBootstrap" class="fab fa-bootstrap" aria-hidden="true"></i>
+        </div>
+        <div class="skillDescription" id="skillDescription">
+            <p id="html5">Started on my own to learn HTML syntax,
+                even before the HTML5 implementation</p>
+            <p id="css3">CSS was the next step to improve the websites I had
+                started to build
+            </p>
+            <p id="js">I began my Javascript journey during a live course at <strong>FLAG -
+                    Formação em Design, Criatividade e Comunicação
+                </strong> and now I've been reinforcing the knowledge on the <strong>
+                    Code Academy
+                </strong> platform</p>
+            <p id="terminal">I've always had some knowledge on terminal controls but
+                recently I've reviewed the concepts down at the <strong>
+                    Code Academy
+                </strong> platform
+            </p>
+            <p id="git">Recently I started learning GIT at the <strong>
+                    Code Academy
+                </strong> platform</p>
+            <p id="gitHub"><strong>Code Academy</strong> is the place where I'm currently learning how to
+                share my work or how to futurely work with a team of Developers</p>
+            <p id="bootstrap"><strong>Bootstrap</strong> I learnt while browsing web tutorials and while
+                implementing it in some of the websites I designed/developer previously</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Pedro Fiúza <span class="spanFooter">&copy;</span> 2021
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
