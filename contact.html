@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="contact">
     <header>
         <h1>Pedro Fiúza</h1>
         <nav>
@@ -26,18 +26,21 @@
             </ul>
         </nav>
     </header>
-    <h2>Contact me</h2>
+    <h2 class="hContact">Contact me</h2>
     <p class="pContact">Have an interesting project? I would love to hear about it!</p>
-    <form action="">
+    <form action="#" method="POST">
+        <label for="name">Name:</label>
         <input type="text" name="name" id="name" required>
+        <label for="email">Email:</label>
         <input type="email" name="email" id="email" required>
-        <textarea name="message" id="message" cols="90" rows="10" placeholder="Insert Message here.."
-            required></textarea>
+        <label for="message">Your message:</label>
+        <textarea name="message" id="message" placeholder="Insert Message here.." required rows="6"></textarea>
         <input type="submit" value="Submit">
     </form>
-
-    <footer>
+    <div class="clear"></div>
+    <footer class="contactFooter">
         <div class="socialContainer">
+            <h3>Social Links</h3>
             <i class="fab fa-facebook" aria-hidden="true"></i>
             <i class="fab fa-instagram" aria-hidden="true"></i>
             <i class="fas fa-home" aria-hidden="true"></i>

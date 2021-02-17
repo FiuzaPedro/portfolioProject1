@@ -39,64 +39,72 @@ for (let i = 0; i < containerWorks.length; i++) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 let skillsContainer = document.getElementById("skillsContainer").children;
 let skillDescription = document.getElementById("skillDescription").children;
+let pDesc = document.getElementById("pDescription");
 for (let j = 0; j < skillsContainer.length; j++) {
     skillsContainer[j].addEventListener("click", function (e) {
-        skillsContainer[j].classList.remove("iActive")
         let currentSkill = e.target.id;
         let elementSkill = document.getElementById(currentSkill);
         let otherSkills = document.querySelectorAll("i");
-        console.log(otherSkills)
 
-        elementSkill.classList.add("iActive");
+        //elementSkill.classList.add("iActive");
         switch (currentSkill) {
             case "iHtml":
-
-                break;
-            case "iHtml":
-
+                pDesc.style.opacity = "0";
+                setTimeout(() => {
+                    pDesc.innerHTML = "<i class='fab fa-html5 innerI' aria-hidden='true'></i><br>";
+                    pDesc.innerHTML += "Started on my own to learn HTML syntax, even before the HTML5 implementation";
+                    pDesc.style.opacity = "1";
+                }, 500);
                 break;
             case "iCss":
-
+                pDesc.style.opacity = "0";
+                setTimeout(() => {
+                    pDesc.style.opacity = "1";
+                    pDesc.innerHTML = "<i class='fab fa-css3 innerI' aria-hidden='true'></i><br>";
+                    pDesc.innerHTML += "CSS was the next step to improve the websites I had started to build";
+                }, 500);
                 break;
             case "iJs":
-
+                pDesc.style.opacity = "0";
+                setTimeout(() => {
+                    pDesc.style.opacity = "1";
+                    pDesc.innerHTML = "<i class='fab fa-js-square innerI' aria-hidden='true'></i><br>";
+                    pDesc.innerHTML += "I began my Javascript journey during a live course at FLAG - Formação em Design, Criatividade e Comunicação and now I've been reinforcing the knowledge on the Code Academy platform ";
+                }, 500);
                 break;
             case "iTerminal":
-
+                pDesc.style.opacity = "0";
+                setTimeout(() => {
+                    pDesc.style.opacity = "1";
+                    pDesc.innerHTML = "<i class='fas fa-terminal innerI' aria-hidden='true'></i><br>";
+                    pDesc.innerHTML += "I've always had some knowledge on terminal controls but recently I've reviewed the concepts down at the Code Academy platform";
+                }, 500);
                 break;
             case "iGit":
-
+                pDesc.style.opacity = "0";
+                setTimeout(() => {
+                    pDesc.style.opacity = "1";
+                    pDesc.innerHTML = "<i class='fab fa-git innerI' aria-hidden='true'></i><br>";
+                    pDesc.innerHTML += "Recently I started learning GIT at the Code Academy platform";
+                }, 500);
                 break;
             case "iGithub":
-
+                pDesc.style.opacity = "0";
+                setTimeout(() => {
+                    pDesc.style.opacity = "1";
+                    pDesc.innerHTML = "<i class='fab fa-github innerI' aria-hidden='true'></i><br>";
+                    pDesc.innerHTML += "Code Academy is the place where I'm currently learning how to share my work or how to futurely work with a team of Developers";
+                }, 500);
                 break;
             case "iBootstrap":
-
+                pDesc.style.opacity = "0";
+                setTimeout(() => {
+                    pDesc.style.opacity = "1";
+                    pDesc.innerHTML = "<i class='fab fa-bootstrap innerI' aria-hidden='true'></i><br>";
+                    pDesc.innerHTML += "Bootstrap I learnt while browsing web tutorials and while implementing it in some of the websites I designed/developer previously";
+                }, 500);
                 break;
 
             default:
@@ -104,4 +112,4 @@ for (let j = 0; j < skillsContainer.length; j++) {
         }
     })
 
-}*/
+}

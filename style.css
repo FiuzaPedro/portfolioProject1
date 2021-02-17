@@ -61,15 +61,19 @@ nav ul li a:hover {
     color: gold
 }
 @media only screen and (max-width: 800px)  {    
+    header {
+        justify-content: left;
+        
+    }
     nav ul {
-        width: 98%;  
-        border: 1px solid blue;      
+        width: 100%;          
     }
     header h1 {
         display: none;        
     }
     nav ul li {        
         padding: 0 1%;
+        font-size: .9em;
     }
 }
 
@@ -174,31 +178,47 @@ nav ul li a:hover {
 #skills {
     background-color: tomato;
     color: white;
-    height: 500px;    
+    height: 700px;    
 }
 .skillsContainer {
     display: flex;
     justify-content: space-around;    
+    border: 2px ridge white;
+    padding:2%;
 }
 i {
-    font-size: 2.5em;
+    font-size: 3em;
     cursor: pointer;
+    transition: color 0.3s linear;
+}
+@media only screen and (max-width: 800px) {
+    i {
+        font-size: 1.5em;
+    }
+    #skills {
+        height: 500px;
+    }
 }
 i:hover, .iActive {
     color: black;      
 }
 .skillDescription {
     margin: 4% 25%;
-    height: 200px;
+    height:180px;    
     width: 50%;
-    border: 2px solid white;    
+    
     position: relative;
 }
-#html5, #css3, #js, #terminal, #git, #gitHub, #bootstrap {
+#pDescription {
     opacity: 0;
+    text-align: center;
+    padding: 10%;
     position: absolute;
-    transition: all 0.5s ease-in;    
+    transition: all 0.5s ease-in;
+    background-color: coral;    
+    line-height: 2em;
 }
+.innerI:hover {color: white;}
 @media only screen and (max-width: 800px) {
     .skillDescription {
         margin: 5% auto;
@@ -208,12 +228,11 @@ i:hover, .iActive {
 }
 
 
-
 footer {
-    margin: 0;
-    background-color: #d2bb98;
-    background-color: rgba(224, 187, 144, 0.7);
-    border: 1px solid #d2bb98;    
+    margin: 0;    
+    background-color: rgb(71, 126, 128);
+    background-color: rgba(255,255,255,0.5);  
+    border: 1px solid white;    
     text-align: center;
     height:160px;
     padding: 5%;
@@ -224,4 +243,99 @@ footer p {
 }
 .spanFooter {
     color: tomato
+}
+
+
+
+
+
+
+
+
+
+
+
+/*contact page styles*/
+.contactFooter {
+    background-image: url("./img/desktop.jpeg");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+}
+.hContact {
+    background-color: white;    
+    text-align: center;
+    padding: 0;
+    border-radius: 0;
+ }
+ .pContact {
+     margin-left: 5%;
+ }
+form * {
+    display: block;    
+}
+form {
+    padding: 2%;
+    background-color: tomato;
+    color: white;
+    border-radius: 10px;
+    width:80%;
+    margin: 0 auto;    
+    box-shadow: 0px 0px 20px white;
+}
+label {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family:'Reggae One', cursive;
+}
+input, textarea {        
+    padding:1%;
+    margin: 1% 0;
+}
+textarea {
+    width: 80%;     
+}
+input {
+    width: 50%; 
+}
+input[type="submit"] {
+    background-color: white;
+    float: right;
+    color: tomato;
+    width:30%;
+    padding:10px;
+    font-weight: bold;
+    border-radius: 5px;    
+    font-family: 'Reggae One', cursive;
+    cursor: pointer;
+    transition: 0.3s all linear;
+}
+input[type="submit"]:hover {
+    background-color: tomato; color: white;
+}
+.clear {
+    clear: right;
+}
+.socialContainer {
+    display: flex;
+    justify-content: space-around;    
+    padding:5%;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.9)
+}
+.socialContainer h3 {
+    color: black;
+    font-family: "Nunito Sans", sans serif;        
+}
+.socialContainer i {
+    color: black;
+}
+.socialContainer i:hover {
+    color: gold
+}
+@media only screen and (max-width: 800px) {
+    .socialContainer {
+        align-items: center;
+    }
 }
