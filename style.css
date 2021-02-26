@@ -4,6 +4,7 @@ html, body {
     margin:0; padding: 0;
     scroll-behavior: smooth;
 }
+
 section{
     padding: 2.5%;   
     
@@ -43,22 +44,25 @@ header h1 {
 }
 nav ul {
     width:500px;
-    /*border: 2px solid tomato;      */
+    
     margin-top: 5%;
 }
 nav ul li {
     display: inline;  
-    padding: 0 5%;
+    padding: 0 1%;
 }
 nav ul li a {
     color: tomato;
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
-    transition: color 0.3s linear;
+    transition: all 0.4s linear; 
+    padding:1%;           
 }
 nav ul li a:hover {
-    color: gold
+    color: white;    
+    border-radius: 5px;
+    background-color: tomato;
 }
 @media only screen and (max-width: 800px)  {    
     header {
@@ -66,9 +70,10 @@ nav ul li a:hover {
         
     }
     nav ul {
-        width: 100%;          
+        width: 400px;          
     }
     header h1 {
+        width: 0;
         display: none;        
     }
     nav ul li {        
@@ -229,9 +234,9 @@ i:hover, .iActive {
 
 
 footer {
-    margin: 0;    
-    background-color: rgb(71, 126, 128);
-    background-color: rgba(255,255,255,0.5);  
+    margin: 0;          
+    background: rgb(67,67,67);
+    background: linear-gradient(0deg, rgba(67,67,67,1) 0%, rgba(255,255,255,1) 55%);
     border: 1px solid white;    
     text-align: center;
     height:160px;
@@ -244,12 +249,6 @@ footer p {
 .spanFooter {
     color: tomato
 }
-
-
-
-
-
-
 
 
 
@@ -281,7 +280,7 @@ form {
     border-radius: 10px;
     width:80%;
     margin: 0 auto;    
-    box-shadow: 0px 0px 20px white;
+    box-shadow: 0px 0px 10px tomato;
 }
 label {
     text-transform: uppercase;
@@ -338,4 +337,95 @@ input[type="submit"]:hover {
     .socialContainer {
         align-items: center;
     }
+}
+
+
+
+
+
+
+
+
+
+
+/*initial animation*/
+.overlay {
+    position: absolute;
+    top: 0;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0.96);
+    background-color: black;
+    opacity: 0.96;
+    text-align: center;
+    color:white;
+    animation-name: animOverlay;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+    animation-delay: 3s;
+    overflow: hidden;
+    z-index: 999;
+}
+.overlay h1 {
+    position: absolute;
+    left:25%;
+    width:50%;
+}
+.hWelcome {
+    animation: animHeaderLeft;
+    animation-duration: 5s;
+    animation-fill-mode: forwards; 
+}
+.hPortf {
+    color: tomato;
+    animation: animHeaderRight;
+    animation-duration: 5s;
+    animation-fill-mode: forwards; 
+    animation-delay: 0.2s;
+    top: 10%;
+}
+@media only screen and (max-width: 800px) {
+    .overlay h1 {
+        font-size: 1.6em;
+    }
+}
+@keyframes animOverlay {
+    0% {
+        opacity: 0.96;
+    }
+    50% {
+        border-radius: 999em;
+        margin-left: 25%;
+        width:50%;
+    }
+    100% {
+        opacity: 0;
+        margin-left:50%;
+        width:0%;
+        z-index: -1;
+    }
+}
+@keyframes animHeaderLeft{
+    0% {
+       top: 0%;
+    }
+    50% {
+       top: 40%;       
+    }
+    100% {
+        top: 30%;
+        opacity: 0;
+    }
+}
+@keyframes animHeaderRight {
+    0% {
+        top: 10%;
+     }
+     30% {
+        top: 50%;       
+     }
+     100% {
+         top: 40%;
+         opacity: 0;
+     }
 }
